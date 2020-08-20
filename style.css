@@ -1,0 +1,35 @@
+#Canvas1 {
+  border: 1px solid black;
+}
+#graphContainer {
+  display: flex;
+  align-items: stretch;
+}
+#scale {
+  display: flex;
+  flex-flow: column;
+}
+.scaleItem:first-of-type {
+  align-items: flex-start;
+}
+.scaleItem:first-of-type span {
+  padding: 2px 5px 0 0;
+}
+.scaleItem:last-of-type {
+  align-items: flex-end;
+}
+.scaleItem {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+/* Chrome, Safari, Edge, Opera */
+#scaleInput::-webkit-outer-spin-button,
+#scaleInput::-webkit-inner-spin-button,
+#scaleInput {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
